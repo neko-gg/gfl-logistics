@@ -268,16 +268,16 @@ export default function LogisticsCalculator() {
                                     comparison = a.runs - b.runs;
                                     break;
                                 case strings.results.headers.manpower:
-                                    comparison = a.rewards.resources.manpower - b.rewards.resources.manpower;
+                                    comparison = a.rewards.resources.manpower * a.runs - b.rewards.resources.manpower * b.runs;
                                     break;
                                 case strings.results.headers.ammunition:
-                                    comparison = a.rewards.resources.ammunition - b.rewards.resources.ammunition;
+                                    comparison = a.rewards.resources.ammunition * a.runs - b.rewards.resources.ammunition * b.runs;
                                     break;
                                 case strings.results.headers.ration:
-                                    comparison = a.rewards.resources.ration - b.rewards.resources.ration;
+                                    comparison = a.rewards.resources.ration * a.runs - b.rewards.resources.ration * b.runs;
                                     break;
                                 case strings.results.headers.parts:
-                                    comparison = a.rewards.resources.parts - b.rewards.resources.parts;
+                                    comparison = a.rewards.resources.parts * a.runs - b.rewards.resources.parts * b.runs;
                                     break;
                                 case strings.results.headers.value:
                                 default:
