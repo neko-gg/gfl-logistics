@@ -160,5 +160,491 @@
                 }
             }
         ]
+    },
+    {
+        "chapter": 2,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 2400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 100,
+                        "ammunition": 0,
+                        "ration": 0,
+                        "parts": 30
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 5400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 60,
+                        "ammunition": 200,
+                        "ration": 80,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 30,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 14400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 10,
+                        "ammunition": 10,
+                        "ration": 10,
+                        "parts": 230
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 50,
+                        "quickRepairContract": 50,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 21600,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 250,
+                        "ration": 600,
+                        "parts": 60
+                    },
+                    "items": {
+                        "tDollContract": 80,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "chapter": 3,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 1200,
+                "rewards": {
+                    "resources": {
+                        "manpower": 50,
+                        "ammunition": 0,
+                        "ration": 75,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 2700,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 120,
+                        "ration": 70,
+                        "parts": 30
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 5400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 300,
+                        "ration": 0,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 40,
+                        "quickRepairContract": 45,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 18000,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 0,
+                        "ration": 300,
+                        "parts": 300
+                    },
+                    "items": {
+                        "tDollContract": 35,
+                        "equipmentContract": 40,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "chapter": 4,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 3600,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 185,
+                        "ration": 185,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 20,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 7200,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 0,
+                        "ration": 0,
+                        "parts": 210
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 50,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 21600,
+                "rewards": {
+                    "resources": {
+                        "manpower": 800,
+                        "ammunition": 550,
+                        "ration": 0,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 70,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 30,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 28800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 400,
+                        "ammunition": 400,
+                        "ration": 400,
+                        "parts": 150
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 100,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "chapter": 5,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 1800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 0,
+                        "ration": 100,
+                        "parts": 45
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 9000,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 600,
+                        "ration": 300,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 80,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 14400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 800,
+                        "ammunition": 400,
+                        "ration": 400,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 50,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 25200,
+                "rewards": {
+                    "resources": {
+                        "manpower": 100,
+                        "ammunition": 0,
+                        "ration": 0,
+                        "parts": 700
+                    },
+                    "items": {
+                        "tDollContract": 40,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "chapter": 6,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 7200,
+                "rewards": {
+                    "resources": {
+                        "manpower": 300,
+                        "ammunition": 300,
+                        "ration": 0,
+                        "parts": 100
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 10800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 200,
+                        "ration": 550,
+                        "parts": 100
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 20,
+                        "quickRepairContract": 50,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 18000,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 0,
+                        "ration": 200,
+                        "parts": 500
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 60,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 43200,
+                "rewards": {
+                    "resources": {
+                        "manpower": 800,
+                        "ammunition": 800,
+                        "ration": 800,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 80
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "chapter": 7,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 9000,
+                "rewards": {
+                    "resources": {
+                        "manpower": 650,
+                        "ammunition": 0,
+                        "ration": 650,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 14400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 650,
+                        "ration": 0,
+                        "parts": 300
+                    },
+                    "items": {
+                        "tDollContract": 60,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 40,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 19800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 900,
+                        "ammunition": 600,
+                        "ration": 600,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 70,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 28800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 250,
+                        "ammunition": 250,
+                        "ration": 250,
+                        "parts": 600
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 80,
+                        "token": 0
+                    }
+                }
+            }
+        ]
     }
 ]
