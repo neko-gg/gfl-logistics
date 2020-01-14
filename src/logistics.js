@@ -236,7 +236,8 @@ export default function LogisticsCalculator() {
                     <TableHead>
                         <TableRow>
                             <TableCell>{strings.results.headers.mission}</TableCell>
-                            {[strings.results.headers.manpower,
+                            {[strings.results.headers.runs,
+                              strings.results.headers.manpower,
                               strings.results.headers.ammunition,
                               strings.results.headers.ration,
                               strings.results.headers.parts,
@@ -263,6 +264,9 @@ export default function LogisticsCalculator() {
                         ).sort((a, b) => {
                             let comparison = 0;
                             switch (resultsOrderBy) {
+                                case strings.results.headers.runs:
+                                    comparison = a.runs - b.runs;
+                                    break;
                                 case strings.results.headers.manpower:
                                     comparison = a.rewards.resources.manpower - b.rewards.resources.manpower;
                                     break;
@@ -283,10 +287,11 @@ export default function LogisticsCalculator() {
                         }).map(mission => (
                             <TableRow key={mission.chapter + '-' + mission.mission}>
                                 <TableCell component="th" scope="row">{mission.chapter}-{mission.mission}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.manpower}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.ammunition}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.ration}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.parts}</TableCell>
+                                <TableCell align="right">{mission.runs}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.manpower * mission.runs}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.ammunition * mission.runs}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.ration * mission.runs}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.parts * mission.runs}</TableCell>
                                 <TableCell align="right">{mission.value}</TableCell>
                             </TableRow>
                         ))}

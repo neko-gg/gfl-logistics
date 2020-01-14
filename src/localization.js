@@ -64,6 +64,7 @@ export const strings = new LocalizedStrings(
             results: {
                 headers: {
                     mission: 'Mission',
+                    runs: 'Runs',
                     manpower: 'Manpower',
                     ammunition: 'Ammunition',
                     ration: 'Ration',
