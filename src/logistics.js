@@ -268,16 +268,16 @@ export default function LogisticsCalculator() {
                                     comparison = a.runs - b.runs;
                                     break;
                                 case strings.results.headers.manpower:
-                                    comparison = a.rewards.resources.manpower * a.runs - b.rewards.resources.manpower * b.runs;
+                                    comparison = a.rewards.resources.manpower - b.rewards.resources.manpower;
                                     break;
                                 case strings.results.headers.ammunition:
-                                    comparison = a.rewards.resources.ammunition * a.runs - b.rewards.resources.ammunition * b.runs;
+                                    comparison = a.rewards.resources.ammunition - b.rewards.resources.ammunition;
                                     break;
                                 case strings.results.headers.ration:
-                                    comparison = a.rewards.resources.ration * a.runs - b.rewards.resources.ration * b.runs;
+                                    comparison = a.rewards.resources.ration - b.rewards.resources.ration;
                                     break;
                                 case strings.results.headers.parts:
-                                    comparison = a.rewards.resources.parts * a.runs - b.rewards.resources.parts * b.runs;
+                                    comparison = a.rewards.resources.parts - b.rewards.resources.parts;
                                     break;
                                 case strings.results.headers.value:
                                 default:
@@ -288,10 +288,10 @@ export default function LogisticsCalculator() {
                             <TableRow key={mission.chapter + '-' + mission.mission}>
                                 <TableCell component="th" scope="row">{mission.chapter}-{mission.mission}</TableCell>
                                 <TableCell align="right">{mission.runs}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.manpower * mission.runs}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.ammunition * mission.runs}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.ration * mission.runs}</TableCell>
-                                <TableCell align="right">{mission.rewards.resources.parts * mission.runs}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.manpower}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.ammunition}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.ration}</TableCell>
+                                <TableCell align="right">{mission.rewards.resources.parts}</TableCell>
                                 <TableCell align="right">{mission.value}</TableCell>
                             </TableRow>
                         ))}
