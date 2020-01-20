@@ -40,6 +40,7 @@ export default class GflDrawer extends React.Component {
                 const boundingClientRect = document.getElementsByClassName(this.props.classes.drawerList)[0].getBoundingClientRect();
                 const fakeDrawerList = document.createElement("div");
 
+                fakeDrawerList.style.pointerEvents = 'none';
                 fakeDrawerList.style.position = 'absolute';
                 fakeDrawerList.style.left = '0';
                 fakeDrawerList.style.top = '0';
