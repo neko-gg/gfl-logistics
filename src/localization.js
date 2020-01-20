@@ -3,16 +3,45 @@ import LocalizedStrings from 'react-localization';
 export const strings = new LocalizedStrings(
     {
         en: {
+            drawer: {
+                time: 'Time',
+                chapters: 'Chapters',
+                resources: 'Resources',
+                items: 'Items',
+                tutorial: 'Tutorial',
+                about: 'About'
+            },
+            joyride: {
+                back: 'Back',
+                close: 'Close',
+                last: 'End',
+                next: 'Next',
+                skip: 'Skip',
+                steps: [
+                    {
+                        title: "Welcome, Shikikan!",
+                        content: "This web app helps you choose the best logistic support missions to run."
+                    },
+                    {
+                        title: "Menu",
+                        content: "Click the menu icon to choose your preferred settings."
+                    },
+                    {
+                        title: "Settings",
+                        content: "Here you can customize the various aspects of logistics: how long do you want to run them for, how often can you check you phone, etc..."
+                    },
+                    {
+                        title: "Results",
+                        content: "Logistics support missions will appear here: their value is calculated based on the settings you chose. Feel free to sort this table however you see fit. Good bye!"
+                    }
+                ]
+            },
             checkFrequency: {
                 question: 'How often can you check your phone?',
-                answerConstantlyValue: 'Constantly',
-                answerConstantly: '{0}.',
-                answerSingular: 'Every {0} hour.',
-                answerPlural: 'Every {0} hours.',
-                longAnswerConstantlyValue: 'constantly',
-                longAnswerConstantly: 'I can check my phone {0}.',
-                longAnswerSingular: 'I can check my phone every {0} hour.',
-                longAnswerPlural: 'I can check my phone every {0} hours.',
+                answerConstantlyValue: 'constantly',
+                answerConstantly: 'I can check my phone {0}.',
+                answerSingular: 'I can check my phone every {0} hour.',
+                answerPlural: 'I can check my phone every {0} hours.',
                 valueLabel: '{0}h',
                 handleLabelConstantly: 'Constantly',
                 handleLabelSingular: '{0} hour',
@@ -20,10 +49,8 @@ export const strings = new LocalizedStrings(
             },
             runTime: {
                 question: 'How long do you want to run logistics for?',
-                answerSingular: 'For {0} hour.',
-                answerPlural: 'For {0} hours.',
-                longAnswerSingular: 'I want to run logistics for {0} hour.',
-                longAnswerPlural: 'I want to run logistics for {0} hours.',
+                answerSingular: 'I want to run logistics for {0} hour.',
+                answerPlural: 'I want to run logistics for {0} hours.',
                 valueLabel: '{0}h',
                 handleLabelSingular: '{0} hour',
                 handleLabelPlural: '{0} hours'
@@ -32,34 +59,30 @@ export const strings = new LocalizedStrings(
                 question: 'Which chapters have you unlocked?',
                 single: '{0}',
                 range: '{0}-{1}',
-                answerSingular: 'Chapter {0}.',
-                answerPlural: 'Chapters {0}.',
-                longAnswerSingle: 'I have unlocked chapter {0}.',
-                longAnswerRange: 'I have unlocked chapters {0}.',
+                answerSingle: 'I have unlocked chapter {0}.',
+                answerRange: 'I have unlocked chapters {0}.',
                 handleLabel: 'Chapter {0}'
             },
             resourceWeights: {
                 question: 'How much do you care about each resource?',
                 multiplier: '{0}x',
-                answer: '{0}\xa0manpower, {1}\xa0ammunition, {2}\xa0ration, {3}\xa0parts.',
-                longAnswer: 'I care: {0}\xa0about\xa0manpower, {1}\xa0about\xa0ammunition, {2}\xa0about\xa0ration, and {3}\xa0about\xa0parts.',
+                answer: 'I care {0} about {1}.',
                 handleLabel: '{0}x',
                 valueLabel: '{0}x',
-                manpowerLabel: 'Manpower',
-                ammunitionLabel: 'Ammunition',
-                rationLabel: 'Ration',
-                partsLabel: 'Parts'
+                manpower: 'manpower',
+                ammunition: 'ammunition',
+                ration: 'ration',
+                parts: 'parts'
             },
             itemWeights: {
                 question: 'How much is each item worth to you?',
                 multiplier: '{0}',
-                answer: 'T-Doll\xa0Contract\xa0{0}, Equipment\xa0Contract\xa0{1}, Quick\xa0Production\xa0Contract\xa0{2}, Quick\xa0Repair\xa0Contract\xa0{3}, Token\xa0{4}.',
-                longAnswer: 'To me, a\xa0T-Doll\xa0Contract\xa0is\xa0worth\xa0{0}, an\xa0Equipment\xa0Contract\xa0is\xa0worth\xa0{1}, a\xa0Quick\xa0Production\xa0Contract\xa0is\xa0worth\xa0{2}, a\xa0Quick\xa0Repair\xa0Contract\xa0is\xa0worth\xa0{3}, and a\xa0Token\xa0is\xa0worth\xa0{4}.',
-                tDollContractLabel: 'T-Doll Contract',
-                equipmentContractLabel: 'Equipment Contract',
-                quickProductionContractLabel: 'Quick Production Contract',
-                quickRepairContractLabel: 'Quick Repair Contract',
-                tokenLabel: 'Token'
+                answer: 'To me, {1} is worth {0}.',
+                tDollContract: 'T-Doll Contract',
+                equipmentContract: 'Equipment Contract',
+                quickProductionContract: 'Quick Production Contract',
+                quickRepairContract: 'Quick Repair Contract',
+                token: 'Token'
             },
             results: {
                 headers: {

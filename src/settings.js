@@ -1,7 +1,12 @@
 import {strings} from './localization';
 
 export const defaults = {
-    activeStep: 0,
+    joyrideState: true,
+    joyrideStep: 0,
+    joyrideHelper: undefined,
+
+    drawerState: false,
+    dialogState: {open: false, selected: strings.drawer.time},
 
     checkFrequency: 1,
     runTime: 4,
