@@ -32,7 +32,7 @@ export const strings = new LocalizedStrings(
                     },
                     {
                         title: "Results",
-                        content: "Logistics support missions will appear here: their value is calculated based on the settings you chose. Feel free to sort this table however you see fit. Good bye!"
+                        content: "Logistics support missions will appear here, on the main page. Their value is calculated based on the settings you chose. Feel free to sort this table however you see fit. Good bye!"
                     }
                 ]
             },

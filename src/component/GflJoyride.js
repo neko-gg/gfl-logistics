@@ -2,6 +2,7 @@ import React from 'react';
 import ReactJoyride, {ACTIONS, EVENTS, LIFECYCLE, STATUS} from 'react-joyride';
 
 import {strings} from '../localization';
+import {cookies} from '../settings';
 import {fakeDrawerClassName} from './GflDrawer';
 
 export default class GflJoyride extends React.Component {
@@ -13,7 +14,12 @@ export default class GflJoyride extends React.Component {
         const finishedStatuses = [STATUS.FINISHED, STATUS.SKIPPED];
         const nextEvents = [EVENTS.STEP_AFTER, EVENTS.TARGET_NOT_FOUND];
 
-        if (nextEvents.includes(type)) {
+        if (finishedStatuses.includes(status) || closeActions.includes(action)) {
+            this.props.setDrawerState(false);
+            this.props.setJoyrideState(false);
+            cookies.set('tutorial', '1');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        } else if (nextEvents.includes(type)) {
             if (LIFECYCLE.COMPLETE === lifecycle && ACTIONS.NEXT === action && 1 === index && !this.props.drawerState) {
                 this.props.setDrawerState(true);
             } else if (LIFECYCLE.COMPLETE === lifecycle && ACTIONS.PREV === action && 2 === index && this.props.drawerState) {
@@ -22,16 +28,13 @@ export default class GflJoyride extends React.Component {
             } else if (LIFECYCLE.COMPLETE === lifecycle && ACTIONS.NEXT === action && 2 === index && this.props.drawerState) {
                 this.props.setDrawerState(false);
                 this.props.setJoyrideStep(3);
+                window.scrollTo({top: 0, behavior: 'smooth'});
             } else if (LIFECYCLE.COMPLETE === lifecycle && ACTIONS.PREV === action && 3 === index && !this.props.drawerState) {
                 this.props.setDrawerState(true);
                 this.props.setJoyrideStep(2);
             } else {
                 this.props.setJoyrideStep(index + (action === ACTIONS.PREV ? -1 : 1));
             }
-        } else if (finishedStatuses.includes(status) || closeActions.includes(action)) {
-            this.props.setDrawerState(false);
-            this.props.setJoyrideState(false);
-            window.scrollTo({top: 0, behavior: 'smooth'});
         }
     };
 
@@ -61,7 +64,7 @@ export default class GflJoyride extends React.Component {
         {
             title: strings.joyride.steps[3].title,
             content: strings.joyride.steps[3].content,
-            placement: "auto",
+            placement: "center",
             target: `.${this.props.classes.results}`,
             disableBeacon: true
         }
@@ -71,6 +74,7 @@ export default class GflJoyride extends React.Component {
         return (
             <ReactJoyride className={this.props.classes.root}
                           getHelpers={this.props.getHelpers}
+                          debug
                           continuous
                           scrollToFirstStep
                           showProgress
