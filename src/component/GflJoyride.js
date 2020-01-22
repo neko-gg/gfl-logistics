@@ -17,7 +17,7 @@ export default class GflJoyride extends React.Component {
         if (finishedStatuses.includes(status) || closeActions.includes(action)) {
             this.props.setDrawerState(false);
             this.props.setJoyrideState(false);
-            cookies.set('tutorial', '1');
+            cookies.set('tutorial', '1', {maxAge: Number.MAX_SAFE_INTEGER});
             window.scrollTo({top: 0, behavior: 'smooth'});
         } else if (nextEvents.includes(type)) {
             if (LIFECYCLE.COMPLETE === lifecycle && ACTIONS.NEXT === action && 1 === index && !this.props.drawerState) {
@@ -74,7 +74,6 @@ export default class GflJoyride extends React.Component {
         return (
             <ReactJoyride className={this.props.classes.root}
                           getHelpers={this.props.getHelpers}
-                          debug
                           continuous
                           scrollToFirstStep
                           showProgress
