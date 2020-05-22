@@ -889,5 +889,86 @@
                 }
             }
         ]
+    },
+    {
+        "chapter": 11,
+        "missions": [
+            {
+                "mission": 1,
+                "time": 14400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 350,
+                        "ammunition": 1050,
+                        "ration": 0,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 50,
+                        "equipmentContract": 50,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 2,
+                "time": 14400,
+                "rewards": {
+                    "resources": {
+                        "manpower": 360,
+                        "ammunition": 540,
+                        "ration": 540,
+                        "parts": 0
+                    },
+                    "items": {
+                        "tDollContract": 80,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 3,
+                "time": 28800,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 750,
+                        "ration": 1500,
+                        "parts": 250
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 0,
+                        "quickRepairContract": 80,
+                        "token": 0
+                    }
+                }
+            },
+            {
+                "mission": 4,
+                "time": 36000,
+                "rewards": {
+                    "resources": {
+                        "manpower": 0,
+                        "ammunition": 1650,
+                        "ration": 0,
+                        "parts": 900
+                    },
+                    "items": {
+                        "tDollContract": 0,
+                        "equipmentContract": 0,
+                        "quickProductionContract": 80,
+                        "quickRepairContract": 0,
+                        "token": 0
+                    }
+                }
+            }
+        ]
     }
 ]

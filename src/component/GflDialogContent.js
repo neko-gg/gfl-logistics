@@ -3,7 +3,7 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Slider from '@material-ui/core/Slider';
 
-import {strings} from '../localization';
+import { strings } from '../localization';
 
 export default class GflDialogContent extends React.Component {
 
@@ -13,7 +13,8 @@ export default class GflDialogContent extends React.Component {
                 return (
                     <span>
                         <Paper className={this.props.classes.dialogPaper}>
-                            <div>{strings.formatString(0 === this.props.checkFrequency ? strings.checkFrequency.answerConstantly : 1 === this.props.checkFrequency ? strings.checkFrequency.answerSingular : strings.checkFrequency.answerPlural, this.props.spanImportantContent(0 === this.props.checkFrequency ? strings.checkFrequency.answerConstantlyValue : this.props.checkFrequency))}</div>
+                            <div>{strings.formatString(0 === this.props.checkFrequency ? strings.checkFrequency.answerConstantly : 1 === this.props.checkFrequency ? strings.checkFrequency.answerSingular : strings.checkFrequency.answerPlural,
+                                                       this.props.spanImportantContent(0 === this.props.checkFrequency ? strings.checkFrequency.answerConstantlyValue : this.props.checkFrequency))}</div>
                             <Slider className={this.props.classes.slider}
                                     defaultValue={this.props.checkFrequency}
                                     onChange={(event, newValue) => this.props.setCheckFrequency(newValue)}
@@ -51,7 +52,7 @@ export default class GflDialogContent extends React.Component {
                                     valueLabelDisplay="off"
                                     step={1}
                                     min={0}
-                                    max={10}/>
+                                    max={11}/>
                         </Paper>
                     </span>);
             case strings.drawer.resources:

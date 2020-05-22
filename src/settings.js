@@ -1,5 +1,5 @@
-import {strings} from './localization';
 import Cookies from 'universal-cookie';
+import { strings } from './localization';
 
 export const cookies = new Cookies();
 
@@ -13,7 +13,7 @@ export const defaults = {
 
     checkFrequency: 1,
     runTime: 4,
-    unlockedChapters: [0, 10],
+    unlockedChapters: [0, 11],
 
     manpowerWeight: 1,
     ammunitionWeight: 1,
